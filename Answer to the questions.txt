@@ -1,0 +1,74 @@
+Q1. Data cleaning including missing values, outliers and multi-collinearity.
+ANS : Data cleaning is a crucial step in the development of any machine learning model, especially in the context of fraudulent transaction detection. It involves the systematic identification and treatment of various issues within the dataset to ensure its quality and reliability.
+First, missing values must be addressed. Missing data can lead to biased or unreliable model predictions. Techniques like imputation, where missing values are filled in using statistical methods or algorithms, are commonly employed to mitigate this issue.
+Outliers, which are data points significantly different from the rest of the dataset, need to be identified and either corrected or removed. Fraudulent transactions often manifest as outliers, so handling them properly is essential for model accuracy.
+Multi-collinearity, which occurs when two or more variables are highly correlated, can negatively impact model interpretability. Dimensionality reduction techniques like Principal Component Analysis (PCA) or feature selection methods can help address this issue.
+
+Q2. Describe your fraud detection model in elaboration.
+
+I implemented the fraud detection model by following a systematic process. First, I collected a labeled dataset consisting of historical transactions, with each transaction labeled as either legitimate or fraudulent. Then, I performed thorough data preprocessing, including handling missing values, outliers, and addressing multicollinearity issues.
+
+Next, I split the dataset into training and testing sets, using the former to train the machine learning algorithms. I selected and fine-tuned the most suitable algorithm, considering factors like accuracy and computational efficiency. Feature engineering was crucial, as it involved selecting relevant transaction attributes.
+
+After training the model, I evaluated its performance using metrics like precision, recall, and F1-score. Regular updates and retraining are vital to adapt to evolving fraud patterns, ensuring the model's continued effectiveness in detecting fraudulent transactions.
+
+Q3. How did you select variables to be included in the model?
+I selected variables for the model by choosing transaction details that seemed important in spotting fraud.By seeing the correlation between the tables i found the relation and do a VIF for creating a systematic correlation between dataset of high dependent columns which was properly mentioned in the data dictionary.txt file. I used my knowledge and data analysis to pick the ones that had the most impact on telling real transactions from fake ones.
+
+
+
+4. Demonstrate the performance of the model by using best set of tools.
+To demonstrate the performance of my fraudulent transaction detection model, I should conduct a thorough evaluation using various performance metrics and choose the most suitable tools and techniques for this task.
+
+Data Preparation: Ensuring my dataset is well-preprocessed, with features properly engineered and scaled.
+
+Model Selection: Artificial Neural Networks (ANN), Decision Trees, Random Forest, and Logistic Regression, compare their performance. Choose the one that exhibits the best performance in terms of metrics like accuracy, precision, recall and AUC-ROC.
+
+Evaluation Metrics: Utilize appropriate evaluation metrics to assess model performance. 
+Cross-Validation
+Hyperparameter Tuning: Fine-tune hyperparameters of the chosen model to optimize its performance. Techniques like grid search or random search can help you find the best parameter values.
+
+Ensemble Methods: Consider ensemble methods, like stacking or boosting, to combine the strengths of multiple models and potentially improve overall performance.
+
+Imbalanced Data Handling: As fraud datasets are typically imbalanced (few fraud cases compared to non-fraud), employ techniques like oversampling, undersampling, or Synthetic Minority Over-sampling Technique (SMOTE) to balance the dataset and prevent model bias.
+
+Threshold Tuning: Adjust the decision threshold for classification based on the specific needs of your application. This can help balance precision and recall according to the business objectives.
+
+Model Interpretability: Ensure that the chosen model provides interpretability or use interpretable techniques alongside complex models for better understanding and trustworthiness of the results.
+
+Monitoring and Maintenance: Regularly monitor the model's performance in production and retrain it as needed to adapt to changing fraud patterns.
+
+By following these detailed steps and selecting the best-performing tools and techniques, I can effectively demonstrate the performance of my fraudulent transaction detection model and ensure its reliability in real-world applications.
+
+
+
+Q5.What are the key factors that predict fraudulent customer?
+->Unusual transaction frequency or amount.
+->Anomalous purchasing patterns.
+->Geographical inconsistencies.
+->Suspicious login behavior (e.g., multiple failed attempts).
+
+  Secure requests with proper authentication reduce the likelihood of fraudulent activity.
+  Insecure or unverified sources can be exploited by fraudsters.
+
+  Verify the legitimacy of the organization requesting money through official channels.
+  Fraudsters often impersonate legitimate entities to deceive customers.
+  
+  Analyzing vendors' past transactions for irregularities.
+  Frequent changes in vendor details or a lack of transaction history may raise suspicions of fraud.
+  
+Q6. Do these factors make sense? If yes, How? If not, How not?  
+Yes, these factors make sense for fraud detection. They make sense because they help us spot things that don't look right. For example, we can catch fraudsters by looking at unusual things in their transactions, like too many payments or purchases in a short time. Checking if requests come from secure sources is important because fraudsters often use fake or unverified channels. Also, verifying if the organization asking for money is real prevents falling for scams. Lastly, by studying vendors' transaction history, we can find if something fishy is going on, like frequent changes or no history, which helps us avoid fraud. These factors work together to keep us safe from scams.
+
+Q7. What kind of prevention should be adopted while company update its infrastructure?
+->Regularly update and patch software to fix security vulnerabilities.
+->Implement strong access controls and user authentication measures.
+->Use secured internet connections (USE VPN).
+->Train employees on cybersecurity best practices.
+->Don't respond to unsolicited calls/SMS(s/E-mails).
+->Establish an incident response plan for swift action in case of security breaches.
+->If you feel like you have been tricked or security compromised, contact your bank immidiately.
+
+Q8. Assuming these actions have been implemented, how would you determine if they work?
+We can evaluate the effectiveness of implemented security actions by observing several factors. Firstly, monitor for any signs of security incidents like breaches or unauthorized access attempts. Fewer incidents indicate better security. Secondly, conduct regular tests where ethical hackers try to find vulnerabilities. If they find fewer weaknesses over time, it suggests improved security. Thirdly, track security-related numbers like successful attacks, incident response times, and policy violations. Lower numbers in these areas show better security. Lastly, gather feedback from employees and users to see if they find the security measures helpful and easy to use. If they report positive experiences, it indicates successful security efforts.
+
